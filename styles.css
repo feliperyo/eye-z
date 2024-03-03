@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+    height: 645px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(157.44deg, rgba(255, 255, 255, 0.6) 0.84%, rgba(255, 255, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
+    padding: 60px 36px;
+    border-radius: 61px;
+    position: absolute;
+    bottom: -10px;
+    border: 2px solid #FFFFFF40;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px 50px 0px;
+}
+
+.logo {
+    width: 250px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: -20px;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 39.84px;
+    color: aliceblue;
+    margin-bottom: 29px;
+}
+
+input {
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    border: 1px solid #FFFFFF40;
+    padding-left: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 18px;
+}
+
+#senha {
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.fazer-login {
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    background-color: rgb(42, 41, 43);
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    border: none;
+}
+
+.fazer-login-google {
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    background-color: rgb(42, 41, 43);
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    border: none;
+    margin-top: 5px;
+}
+
+.logo-google {
+    width: 15px;
+    margin-right: 10px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: aliceblue;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.criar-conta {
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF
+}
+
+.bg-login {
+    width: 100vw;
+    height: 102vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:400px) {
+
+    main {
+        margin-top: 2px;
+        position: static;
+    }
+
+    .bg-login {
+        height: 140vh;
+    }
+}
