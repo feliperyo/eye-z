@@ -195,8 +195,33 @@ button {
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:700px) {
     main {
+        margin-bottom: 150px;
+        width: 415px;
+        left: 24.5%;
+    }
+
+    #forget-pass::after {
+        left: 100px;
+    }
+
+    #forget-pass:hover::after {
+        left: 100px;
+    }
+
+    #already-login::after {
+        left: 130px;
+    }
+
+    #already-login:hover::after {
+        left: 130px;
+    }
+}
+
+@media screen and (min-width:1030px) {
+    main {
+        margin-bottom: 50px;
         width: 415px;
         left: 39.3%;
     }
