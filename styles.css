@@ -69,6 +69,10 @@ input {
     margin-bottom: 18px;
 }
 
+#senha2 {
+    margin-top: -13px;
+}
+
 .fazer-login {
     width: 342px;
     height: 74px;
@@ -103,9 +107,55 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    color: aliceblue;
+    color: rgb(42, 41, 43);
     margin-top: 28px;
     margin-bottom: 28px;
+    text-decoration: none;
+}
+
+#forget-pass::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #250163;
+    bottom: 155px;
+    left: 430px;
+}
+
+#forget-pass:hover::after {
+    content: "";
+    width: 215px;
+    height: 2px;
+    position: absolute;
+    background: #250163;
+    left: 430px;
+    transition: 0.3s;
+}
+
+#already-login::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #250163;
+    bottom: 85px;
+    left: 462px;
+}
+
+#already-login:hover::after {
+    content: "";
+    width: 153px;
+    height: 2px;
+    position: absolute;
+    background: #250163;
+    left: 462px;
+    transition: 0.3s;
+}
+
+span {
+    font-weight: 700;
+    color: aliceblue;
 }
 
 .criar-conta {
@@ -129,6 +179,10 @@ a {
     z-index: -1;
 }
 
+button {
+    cursor: pointer;
+}
+
 @media screen and (max-width:400px) {
 
     main {
@@ -138,5 +192,28 @@ a {
 
     .bg-login {
         height: 140vh;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    main {
+        width: 415px;
+        left: 39.3%;
+    }
+
+    #forget-pass::after {
+        left: 100px;
+    }
+
+    #forget-pass:hover::after {
+        left: 100px;
+    }
+
+    #already-login::after {
+        left: 130px;
+    }
+
+    #already-login:hover::after {
+        left: 130px;
     }
 }
